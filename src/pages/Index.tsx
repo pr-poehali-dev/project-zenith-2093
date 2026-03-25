@@ -1,8 +1,7 @@
 import { useEffect, useRef, useState } from "react"
 import { Button } from "@/components/ui/button"
-import { PawPrint, Trees, Satellite, Menu, X, Youtube, Instagram, ChevronDown } from "lucide-react"
+import { Package, Layers, TreePine, Truck, Menu, X, Youtube, Instagram, ChevronDown } from "lucide-react"
 import { AnimatedText } from "@/components/animated-text"
-import { CustomDroneIcon } from "@/components/drone-icon"
 import { WorldMap } from "@/components/world-map"
 import { experiences } from "@/lib/experience-data"
 import type { Experience } from "@/lib/experience-data"
@@ -64,7 +63,7 @@ export default function VerdantPage() {
   const heroRef = useRef<HTMLDivElement>(null)
   const observerRef = useRef<IntersectionObserver | null>(null)
 
-  const dynamicWords = ["леса", "природу", "животных", "экосистемы", "биоразнообразие", "дикую жизнь", "среду обитания"]
+  const dynamicWords = ["доску", "брус", "бруски", "пиломатериал", "хвойные", "лиственные"]
 
   useEffect(() => {
     const wordInterval = setInterval(() => {
@@ -157,9 +156,9 @@ export default function VerdantPage() {
           <div className="flex items-center gap-6 md:h-14 h-14">
             <button
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-              className="text-lg md:text-xl font-semibold font-mono hover:text-pink-400 transition-colors duration-300"
+              className="text-lg md:text-xl font-semibold font-mono hover:text-amber-400 transition-colors duration-300"
             >
-              VERDANT
+              АЛЬЯНС ДШ
             </button>
 
             <nav className="hidden md:flex items-center gap-8">
@@ -167,19 +166,19 @@ export default function VerdantPage() {
                 onClick={() => scrollToSection("metrics")}
                 className="text-sm text-[#A7ABB3] hover:text-[#F2F3F5] transition-colors duration-300"
               >
-                Результаты
+                О компании
               </button>
               <button
                 onClick={() => scrollToSection("map")}
                 className="text-sm text-[#A7ABB3] hover:text-[#F2F3F5] transition-colors duration-300"
               >
-                Проекты
+                Поставки
               </button>
               <button
                 onClick={() => scrollToSection("narrative")}
                 className="text-sm text-[#A7ABB3] hover:text-[#F2F3F5] transition-colors duration-300"
               >
-                Технологии
+                Каталог
               </button>
               <button
                 onClick={() => scrollToSection("faq")}
@@ -191,7 +190,7 @@ export default function VerdantPage() {
                 onClick={() => scrollToSection("cta")}
                 className="text-sm text-[#A7ABB3] hover:text-[#F2F3F5] transition-colors duration-300"
               >
-                Участвовать
+                Контакты
               </button>
             </nav>
 
@@ -211,33 +210,33 @@ export default function VerdantPage() {
           <div className="flex flex-col gap-8 items-start text-left w-full">
             <button
               onClick={() => scrollToSection("metrics")}
-              className="font-serif text-5xl md:text-7xl font-light text-[#F2F3F5] hover:text-pink-400 transition-colors duration-300"
+              className="font-serif text-5xl md:text-7xl font-light text-[#F2F3F5] hover:text-amber-400 transition-colors duration-300"
             >
-              Результаты
+              О компании
             </button>
             <button
               onClick={() => scrollToSection("map")}
-              className="font-serif text-5xl md:text-7xl font-light text-[#F2F3F5] hover:text-pink-400 transition-colors duration-300"
+              className="font-serif text-5xl md:text-7xl font-light text-[#F2F3F5] hover:text-amber-400 transition-colors duration-300"
             >
-              Проекты
+              Поставки
             </button>
             <button
               onClick={() => scrollToSection("narrative")}
-              className="font-serif text-5xl md:text-7xl font-light text-[#F2F3F5] hover:text-pink-400 transition-colors duration-300"
+              className="font-serif text-5xl md:text-7xl font-light text-[#F2F3F5] hover:text-amber-400 transition-colors duration-300"
             >
-              Технологии
+              Каталог
             </button>
             <button
               onClick={() => scrollToSection("faq")}
-              className="font-serif text-5xl md:text-7xl font-light text-[#F2F3F5] hover:text-pink-400 transition-colors duration-300"
+              className="font-serif text-5xl md:text-7xl font-light text-[#F2F3F5] hover:text-amber-400 transition-colors duration-300"
             >
               Вопросы
             </button>
             <button
               onClick={() => scrollToSection("cta")}
-              className="font-serif text-5xl md:text-7xl font-light text-[#F2F3F5] hover:text-pink-400 transition-colors duration-300"
+              className="font-serif text-5xl md:text-7xl font-light text-[#F2F3F5] hover:text-amber-400 transition-colors duration-300"
             >
-              Участвовать
+              Контакты
             </button>
           </div>
         </div>
@@ -278,21 +277,21 @@ export default function VerdantPage() {
                   wordFade ? "opacity-100 blur-0" : "opacity-0 blur-lg"
                 }`}
               >
-                Защитим <AnimatedText key={dynamicWordIndex} text={dynamicWords[dynamicWordIndex]} delay={0} />
+                Поставим <AnimatedText key={dynamicWordIndex} text={dynamicWords[dynamicWordIndex]} delay={0} />
               </span>
               <span className="block stagger-reveal text-7xl font-light md:text-8xl" style={{ animationDelay: "90ms" }}>
-                в масштабе
+                оптом
               </span>
             </h1>
             <p
               className="text-[#A7ABB3] text-base md:text-lg max-w-[520px] mx-auto mb-8 leading-relaxed stagger-reveal text-white"
               style={{ animationDelay: "180ms" }}
             >
-              Мониторинг лесов в реальном времени с помощью ИИ. Обнаружение угроз, отслеживание биоразнообразия, сохранение природы для будущих поколений.
+              Пиломатериалы хвойных и лиственных пород оптом. Хабаровск и Дальний Восток. Работаем с 2022 года.
             </p>
             <div className="stagger-reveal" style={{ animationDelay: "270ms" }}>
               <Button className="glass-button px-8 py-6 text-base rounded-full bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300 text-white">
-                Начать защиту
+                Запросить прайс-лист
               </Button>
             </div>
           </div>
@@ -309,7 +308,7 @@ export default function VerdantPage() {
               >
                 <img
                   src="/dashboard-screenshot.png"
-                  alt="Панель мониторинга VERDANT"
+                  alt="Склад пиломатериалов Альянс ДШ"
                   className="object-cover dashboard-image w-full h-auto"
                 />
               </div>
@@ -321,7 +320,7 @@ export default function VerdantPage() {
       <section className="relative py-12 border-y border-white/5 bg-[#0B0C0F] overflow-hidden md:py-8 md:pt-8 md:pb-4">
         <div className="w-full">
           <p className="text-center text-xs md:text-sm uppercase tracking-[0.2em] text-[#A7ABB3] mb-8">
-            Нам доверяют ведущие природоохранные организации
+            Работаем с ведущими строительными и производственными компаниями ДВ
           </p>
           <div className="logo-marquee">
             <div className="logo-marquee-content">
@@ -359,31 +358,31 @@ export default function VerdantPage() {
       <section id="metrics" className="relative py-20 md:py-32 px-4 animate-on-scroll md:pt-24 md:pb-20">
         <div className="max-w-[1120px] w-full mx-auto">
           <h2 className="font-serif text-[32px] leading-[1.15] md:text-[48px] md:leading-[1.1] font-medium mb-6 md:mb-8 text-center text-balance">
-            Природоохранный{" "}
+            Надёжный поставщик{" "}
             <span
               className="inline-block"
               style={{
-                background: "linear-gradient(135deg, #d9a7c7 0%, #fffcdc 100%)",
+                background: "linear-gradient(135deg, #f59e0b 0%, #fde68a 100%)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",
               }}
             >
-              результат
+              пиломатериалов
             </span>{" "}
-            в масштабе
+            на Дальнем Востоке
           </h2>
 
           <p className="text-[#A7ABB3] text-sm md:text-base mb-12 md:mb-16 text-center max-w-[600px] mx-auto leading-relaxed">
-            Нам доверяют природоохранные организации по всему миру. Работаем на технологиях, созданных для природы.
+            ООО «Альянс ДШ» — оптовые поставки досок, брусьев, брусков хвойных и лиственных пород. Хабаровск, работаем с 2022 года.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 max-w-[800px] mx-auto">
             {[
-              { label: "ЗАЩИЩЕНО ЛЕСОВ", value: "2.4M", desc: "гектаров по всему миру", color: "pink" },
-              { label: "ВИДОВ НА МОНИТОРИНГЕ", value: "12K+", desc: "диких животных", color: "purple" },
-              { label: "ПОГЛОЩЕНО УГЛЕРОДА", value: "18M", desc: "тонн CO2", color: "pink" },
-              { label: "ТОЧНОСТЬ ДЕТЕКЦИИ", value: "99.4%", desc: "обнаружения угроз", color: "purple" },
+              { label: "ЛЕТ НА РЫНКЕ", value: "3+", desc: "стабильных поставок", color: "pink" },
+              { label: "СОРТОВ ДРЕВЕСИНЫ", value: "5+", desc: "хвойные и лиственные", color: "purple" },
+              { label: "РЕГИОНОВ ПОСТАВКИ", value: "10+", desc: "по Дальнему Востоку", color: "pink" },
+              { label: "ВЫПОЛНЕНИЕ ЗАКАЗОВ", value: "100%", desc: "в срок и в объёме", color: "purple" },
             ].map((metric, i) => (
               <div
                 key={i}
@@ -411,13 +410,13 @@ export default function VerdantPage() {
         <div className="text-center mb-12 md:mb-16 px-4">
           <div className="text-[10px] md:text-xs uppercase tracking-[0.15em] text-[#A7ABB3] mb-6 flex items-center justify-center gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-pink-400 animate-pulse" />
-            ГЛОБАЛЬНЫЙ ОХВАТ
+            ГЕОГРАФИЯ ПОСТАВОК
           </div>
           <h2 className="font-serif text-[32px] leading-[1.15] md:text-[48px] md:leading-[1.1] font-medium mb-6 text-balance">
-            Проекты по всему миру
+            Поставки по всему Дальнему Востоку
           </h2>
           <p className="text-[#A7ABB3] text-sm md:text-base max-w-[600px] mx-auto leading-relaxed">
-            Мониторинг и защита критически важных лесных экосистем на пяти континентах
+            Работаем с компаниями в Хабаровском крае, Приморье, ЕАО и других регионах ДФО
           </p>
         </div>
 
@@ -434,24 +433,24 @@ export default function VerdantPage() {
             <div className="max-w-[720px]">
               <div className="text-[10px] md:text-xs uppercase tracking-[0.15em] text-[#A7ABB3] mb-6 flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-pink-400 animate-pulse" />
-                ТЕХНОЛОГИИ СОХРАНЕНИЯ
+                АССОРТИМЕНТ ПРОДУКЦИИ
               </div>
               <h2 className="font-serif text-[36px] leading-[1.15] md:text-[56px] md:leading-[1.1] font-medium mb-8 text-balance">
-                Каждая экосистема{" "}
+                Каждый вид{" "}
                 <span
                   className="inline-block"
                   style={{
-                    background: "linear-gradient(135deg, #d9a7c7 0%, #fffcdc 100%)",
+                    background: "linear-gradient(135deg, #f59e0b 0%, #fde68a 100%)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
                     backgroundClip: "text",
                   }}
                 >
-                  важна
+                  пиломатериала
                 </span>
               </h2>
               <p className="text-[#A7ABB3] text-base md:text-lg leading-relaxed mb-12">
-                Наши спутниковые и ИИ-технологии отслеживают биоразнообразие, выявляют незаконные вырубки, анализируют паттерны обезлесения и оповещают команды в реальном времени. Сохранение со скоростью, которую требует природа.
+                Поставляем хвойные и лиственные породы: доску обрезную, брус, бруски. Каждая партия соответствует стандартам качества. Подберём нужный размер и объём под ваши задачи.
               </p>
 
               <div className="md:hidden mb-8">
@@ -476,27 +475,27 @@ export default function VerdantPage() {
               <div className="space-y-6">
                 {[
                   {
-                    title: "Дроны-разведчики",
-                    desc: "Аэросъемка для учета дикой природы и видового разнообразия",
-                    icon: CustomDroneIcon,
+                    title: "Хвойные породы",
+                    desc: "Прочные, содержат смолы — естественная защита от влаги. Для несущих конструкций и каркасов.",
+                    icon: TreePine,
                     image: "/drone.png",
                   },
                   {
-                    title: "Мониторинг 24/7",
-                    desc: "Круглосуточное спутниковое наблюдение с мгновенными оповещениями",
-                    icon: Satellite,
+                    title: "Лиственные породы",
+                    desc: "Мягкие породы для отделки, мебели и изготовления деталей интерьера.",
+                    icon: Layers,
                     image: "/real-time-satellite.png",
                   },
                   {
-                    title: "Учет биоразнообразия",
-                    desc: "Картирование и мониторинг популяций животных по регионам",
-                    icon: PawPrint,
+                    title: "Доски и бруски",
+                    desc: "Доски (толщина до 10 см) и бруски (ширина ≤ двойной толщины) — для любых задач.",
+                    icon: Package,
                     image: "/biodiversity-tracking.png",
                   },
                   {
-                    title: "Защита от вырубки",
-                    desc: "Обнаружение угроз до их эскалации",
-                    icon: Trees,
+                    title: "Брус строительный",
+                    desc: "Ширина более 10 см. Применяется в несущих конструкциях, перекрытиях, стропилах.",
+                    icon: Truck,
                     image: "/deforestation-detect.png",
                   },
                 ].map((feature, i) => (
@@ -516,7 +515,7 @@ export default function VerdantPage() {
                   >
                     <feature.icon
                       className={`w-6 h-6 flex-shrink-0 mt-1 transition-colors ${
-                        selectedFeature === i ? "text-green-400" : "text-green-500/60"
+                        selectedFeature === i ? "text-amber-400" : "text-amber-500/60"
                       }`}
                     />
                     <div className="flex-1">
@@ -537,19 +536,19 @@ export default function VerdantPage() {
               <div className="relative w-full h-full min-h-[500px]">
                 {[
                   {
-                    title: "Дроны-разведчики",
+                    title: "Хвойные породы",
                     image: "/drone.png",
                   },
                   {
-                    title: "Мониторинг 24/7",
+                    title: "Лиственные породы",
                     image: "/real-time-satellite.png",
                   },
                   {
-                    title: "Учет биоразнообразия",
+                    title: "Доски и бруски",
                     image: "/biodiversity-tracking.png",
                   },
                   {
-                    title: "Защита от вырубки",
+                    title: "Брус строительный",
                     image: "/deforestation-detect.png",
                   },
                 ].map((feature, i) => {
@@ -603,41 +602,41 @@ export default function VerdantPage() {
               ?
             </h2>
             <p className="text-[#A7ABB3] text-sm md:text-base max-w-[600px] mx-auto leading-relaxed">
-              Все, что нужно знать о VERDANT и нашей платформе для экологического мониторинга.
+              Всё, что нужно знать о сотрудничестве с ООО «Альянс ДШ».
             </p>
           </div>
 
           <div className="space-y-4">
             {[
               {
-                question: "Как работает спутниковый мониторинг VERDANT?",
+                question: "Какой минимальный объём для оптовой поставки?",
                 answer:
-                  "Наша платформа использует сеть спутников в сочетании с ИИ-алгоритмами для анализа лесного покрова в реальном времени. Мы обнаруживаем изменения площадью от 0,5 гектара в течение 24 часов, что позволяет оперативно реагировать на угрозы: незаконные вырубки или лесные пожары.",
+                  "Минимальный объём заказа — от 1 куб. м. Чем больше партия, тем выгоднее цена. Уточните нужный объём, и мы подготовим коммерческое предложение.",
               },
               {
-                question: "Какие регионы охватывает VERDANT?",
+                question: "В какие регионы вы поставляете пиломатериалы?",
                 answer:
-                  "VERDANT сейчас ведет мониторинг более 2,4 миллиона гектаров на пяти континентах: тропические леса Амазонии, бассейн Конго, леса Борнео, сибирская тайга и тихоокеанский северо-запад Америки. Мы постоянно расширяем охват для защиты новых экосистем.",
+                  "Основная география поставок — Хабаровский край, Приморье, Еврейская автономная область, Амурская область и другие регионы Дальневосточного федерального округа. Готовы обсудить поставки и в другие регионы.",
               },
               {
-                question: "Насколько точна система обнаружения угроз?",
+                question: "Какие сорта и породы древесины есть в наличии?",
                 answer:
-                  "Наша система обнаружения угроз на базе ИИ достигает точности 99,4%. Мы используем модели машинного обучения, обученные на миллионах спутниковых снимков, чтобы отличать естественные изменения от антропогенного обезлесения или незаконной деятельности.",
+                  "В нашем ассортименте: хвойные (сосна, ель, лиственница) и лиственные породы. По виду продукции: доска обрезная, брус строительный, бруски. Уточняйте наличие нужной позиции — мы подберём под ваш запрос.",
               },
               {
-                question: "Можно ли интегрировать VERDANT с существующими системами?",
+                question: "Как оформить заказ и узнать актуальные цены?",
                 answer:
-                  "Да, VERDANT предоставляет полноценный API для интеграции с существующими системами управления природоохранной деятельностью, ГИС-платформами и системами оповещения. Наша документация содержит подробные руководства по внедрению.",
+                  "Свяжитесь с нами по телефону или через форму на сайте. Мы уточним ваши потребности по породе, размеру, объёму и срокам, после чего подготовим коммерческое предложение или прайс-лист.",
               },
               {
-                question: "Какова модель ценообразования VERDANT?",
+                question: "Вы работаете с юридическими лицами и ИП?",
                 answer:
-                  "Мы предлагаем многоуровневое ценообразование в зависимости от площади мониторинга и набора функций. Некоммерческие природоохранные организации могут претендовать на льготные тарифы или гранты. Свяжитесь с нами для расчета индивидуального предложения.",
+                  "Да, мы работаем с юридическими лицами, индивидуальными предпринимателями и самозанятыми. Возможна оплата по безналичному расчёту с полным пакетом закрывающих документов.",
               },
               {
-                question: "Как я могу помочь в сохранении лесов через VERDANT?",
+                question: "Можно ли получить образцы или описание продукции?",
                 answer:
-                  "Есть несколько способов: пожертвование на мониторинг незащищенных территорий, волонтерство в командах наземной верификации или корпоративное партнерство. Каждый вклад помогает защищать критически важные экосистемы.",
+                  "Да, по запросу мы предоставляем описание продукции, технические характеристики и фотографии партий. Обратитесь к нашему менеджеру, и мы подготовим всю необходимую информацию.",
               },
             ].map((faq, i) => (
               <div
@@ -681,19 +680,19 @@ export default function VerdantPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-[#0B0C0F] via-[#0B0C0F]/60 to-transparent pointer-events-none" />
         <div className="max-w-[800px] w-full mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 glass-pill px-4 py-2 rounded-full mb-8 text-xs md:text-sm text-[#A7ABB3]">
-            <span className="w-1.5 h-1.5 rounded-full bg-pink-400 animate-pulse" />
-            Спасем планету
+            <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse" />
+            Альянс ДШ · Хабаровск
           </div>
 
           <h2 className="font-serif text-[40px] leading-[1.15] md:text-[64px] md:leading-[1.1] font-medium mb-6 text-balance">
-            Присоединяйтесь к глобальному движению
+            Готовы обсудить поставку?
           </h2>
           <p className="text-[#A7ABB3] text-base md:text-lg mb-10 leading-relaxed max-w-[560px] mx-auto">
-            Вместе мы строим устойчивое будущее. Начните защищать леса уже сегодня.
+            Свяжитесь с нами — подберём нужный пиломатериал, объём и условия отгрузки.
           </p>
 
           <Button className="glass-button text-base rounded-full bg-white/5 border border-white/20 hover:bg-white/15 hover:border-white/30 transition-all duration-300 text-white px-8 py-6 md:text-base">
-            Начать сейчас
+            Связаться с нами
           </Button>
         </div>
       </section>
@@ -703,9 +702,9 @@ export default function VerdantPage() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8 mb-12">
             {/* Brand Column */}
             <div className="flex flex-col gap-4">
-              <div className="text-lg font-semibold font-mono">VERDANT</div>
+              <div className="text-lg font-semibold font-mono">АЛЬЯНС ДШ</div>
               <p className="text-xs text-[#A7ABB3] leading-relaxed">
-                Защита лесов по всему миру с помощью мониторинга в реальном времени и ИИ-технологий.
+                Оптовые поставки пиломатериалов по Дальнему Востоку. Хабаровск, с 2022 года.
               </p>
               <div className="flex items-center gap-4 mt-2">
                 <a
@@ -736,19 +735,19 @@ export default function VerdantPage() {
 
             {/* Product Menu */}
             <div className="flex flex-col gap-4">
-              <div className="text-xs uppercase tracking-[0.15em] text-[#F2F3F5] font-semibold mb-2">Продукт</div>
+              <div className="text-xs uppercase tracking-[0.15em] text-[#F2F3F5] font-semibold mb-2">Продукция</div>
               <div className="flex flex-col gap-3">
                 <a href="#" className="text-sm text-[#A7ABB3] hover:text-[#F2F3F5] transition-colors">
-                  Возможности
+                  Хвойные породы
                 </a>
                 <a href="#" className="text-sm text-[#A7ABB3] hover:text-[#F2F3F5] transition-colors">
-                  Тарифы
+                  Лиственные породы
                 </a>
                 <a href="#" className="text-sm text-[#A7ABB3] hover:text-[#F2F3F5] transition-colors">
-                  Документация
+                  Доска обрезная
                 </a>
                 <a href="#" className="text-sm text-[#A7ABB3] hover:text-[#F2F3F5] transition-colors">
-                  API
+                  Брус строительный
                 </a>
               </div>
             </div>
@@ -761,10 +760,10 @@ export default function VerdantPage() {
                   О нас
                 </a>
                 <a href="#" className="text-sm text-[#A7ABB3] hover:text-[#F2F3F5] transition-colors">
-                  Блог
+                  Реквизиты
                 </a>
                 <a href="#" className="text-sm text-[#A7ABB3] hover:text-[#F2F3F5] transition-colors">
-                  Карьера
+                  Контакты
                 </a>
                 <a href="#" className="text-sm text-[#A7ABB3] hover:text-[#F2F3F5] transition-colors">
                   Контакты
@@ -791,7 +790,7 @@ export default function VerdantPage() {
 
           {/* Footer Bottom */}
           <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-[#A7ABB3]">
-            <div>2025 VERDANT. Все права защищены.</div>
+            <div>2025 ООО «Альянс ДШ». Все права защищены.</div>
             <div className="flex gap-6">
               <a href="#" className="hover:text-[#F2F3F5] transition-colors">
                 Политика конфиденциальности

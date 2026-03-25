@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -12,8 +12,8 @@
     --text-secondary: #a7abb3;
     --glass-bg: rgba(15, 17, 23, 0.3);
     --glass-border: rgba(255, 255, 255, 0.08);
-    --accent-pink: #ec4899;
-    --accent-purple: #a855f7;
+    --accent-pink: #f59e0b;
+    --accent-purple: #d97706;
 
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
@@ -63,7 +63,7 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: "Inter", system-ui, sans-serif;
   }
 }
 
@@ -219,7 +219,9 @@
 .animate-on-scroll {
   opacity: 0;
   transform: translateY(16px);
-  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  transition:
+    opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .animate-on-scroll.animate-in {

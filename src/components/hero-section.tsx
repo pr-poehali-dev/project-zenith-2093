@@ -71,7 +71,7 @@ export function HeroSection({
               className="text-[#A7ABB3] text-base md:text-lg max-w-[520px] mx-auto mb-8 leading-relaxed stagger-reveal text-white"
               style={{ animationDelay: "180ms" }}
             >
-              Пиломатериалы хвойных и лиственных пород оптом. Хабаровск и Дальний Восток. Работаем с 2022 года.
+              Пиломатериалы хвойных и лиственных пород оптом. Поставки по всей России. Более 9 лет на рынке.
             </p>
             <div className="stagger-reveal" style={{ animationDelay: "270ms" }}>
               <Button className="glass-button px-8 py-6 text-base rounded-full bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300 text-white">
@@ -104,7 +104,7 @@ export function HeroSection({
       <section className="relative py-12 border-y border-white/5 bg-[#0B0C0F] overflow-hidden md:py-8 md:pt-8 md:pb-4">
         <div className="w-full">
           <p className="text-center text-xs md:text-sm uppercase tracking-[0.2em] text-[#A7ABB3] mb-8">
-            Работаем с ведущими строительными и производственными компаниями ДВ
+            Работаем с ведущими строительными и производственными компаниями России
           </p>
           <div className="logo-marquee">
             <div className="logo-marquee-content">
@@ -154,18 +154,18 @@ export function HeroSection({
             >
               пиломатериалов
             </span>{" "}
-            на Дальнем Востоке
+            по всей России
           </h2>
 
           <p className="text-[#A7ABB3] text-sm md:text-base mb-12 md:mb-16 text-center max-w-[600px] mx-auto leading-relaxed">
-            ООО «Альянс ДШ» — оптовые поставки досок, брусьев, брусков хвойных и лиственных пород. Хабаровск, работаем с 2022 года.
+            ООО «Альянс ДШ» — оптовые поставки досок, брусьев, брусков хвойных и лиственных пород. Более 9 лет на рынке, доставка по всей России.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 max-w-[800px] mx-auto">
             {[
-              { label: "ЛЕТ НА РЫНКЕ", value: "3+", desc: "стабильных поставок", color: "pink" },
+              { label: "ЛЕТ НА РЫНКЕ", value: "9+", desc: "стабильных поставок", color: "pink" },
               { label: "СОРТОВ ДРЕВЕСИНЫ", value: "5+", desc: "хвойные и лиственные", color: "purple" },
-              { label: "РЕГИОНОВ ПОСТАВКИ", value: "10+", desc: "по Дальнему Востоку", color: "pink" },
+              { label: "РЕГИОНОВ ПОСТАВКИ", value: "50+", desc: "по всей России", color: "pink" },
               { label: "ВЫПОЛНЕНИЕ ЗАКАЗОВ", value: "100%", desc: "в срок и в объёме", color: "purple" },
             ].map((metric, i) => (
               <div

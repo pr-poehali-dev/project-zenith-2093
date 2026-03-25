@@ -9,7 +9,7 @@ export function SiteFooter() {
           <div className="flex flex-col gap-4">
             <div className="text-lg font-semibold font-mono">АЛЬЯНС ДШ</div>
             <p className="text-xs text-[#A7ABB3] leading-relaxed">
-              Оптовые поставки пиломатериалов по Дальнему Востоку. Хабаровск, с 2022 года.
+              Оптовые поставки пиломатериалов по всей России. Более 9 лет на рынке.
             </p>
             <div className="flex items-center gap-4 mt-2">
               <a

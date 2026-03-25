@@ -7,7 +7,6 @@ const requisites = [
   { icon: Hash, label: "КПП", value: "270001001" },
   { icon: Hash, label: "ОКПО", value: "78414530" },
   { icon: User, label: "Генеральный директор", value: "Дьяченко Руслан Юрьевич" },
-  { icon: MapPin, label: "Юридический адрес", value: "680000, Хабаровский край, г. Хабаровск, ул. Фрунзе, д. 22, офис 307" },
   { icon: FileText, label: "Дата регистрации", value: "9 ноября 2022 года" },
 ]
 
@@ -40,7 +39,7 @@ export function RequisitesSection() {
             </span>
           </h2>
           <p className="text-[#A7ABB3] text-sm md:text-base max-w-[600px] mx-auto leading-relaxed">
-            Официальные реквизиты ООО «Альянс ДШ» для оформления договоров и первичных документов.
+            Официальные реквизиты ООО «Альянс ДШ». Более 9 лет на рынке, поставки по всей России.
           </p>
         </div>
 

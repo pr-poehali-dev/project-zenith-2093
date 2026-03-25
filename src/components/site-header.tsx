@@ -45,6 +45,12 @@ export function SiteHeader({ isMenuOpen, setIsMenuOpen, scrollToSection }: SiteH
                 Вопросы
               </button>
               <button
+                onClick={() => scrollToSection("requisites")}
+                className="text-sm text-[#A7ABB3] hover:text-[#F2F3F5] transition-colors duration-300"
+              >
+                Реквизиты
+              </button>
+              <button
                 onClick={() => scrollToSection("cta")}
                 className="text-sm text-[#A7ABB3] hover:text-[#F2F3F5] transition-colors duration-300"
               >
@@ -89,6 +95,12 @@ export function SiteHeader({ isMenuOpen, setIsMenuOpen, scrollToSection }: SiteH
               className="font-serif text-5xl md:text-7xl font-light text-[#F2F3F5] hover:text-amber-400 transition-colors duration-300"
             >
               Вопросы
+            </button>
+            <button
+              onClick={() => scrollToSection("requisites")}
+              className="font-serif text-5xl md:text-7xl font-light text-[#F2F3F5] hover:text-amber-400 transition-colors duration-300"
+            >
+              Реквизиты
             </button>
             <button
               onClick={() => scrollToSection("cta")}

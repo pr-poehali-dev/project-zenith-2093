@@ -4,6 +4,7 @@ import { SiteHeader } from "@/components/site-header"
 import { HeroSection } from "@/components/hero-section"
 import { CatalogSection } from "@/components/catalog-section"
 import { SiteFooter } from "@/components/site-footer"
+import { RequisitesSection } from "@/components/requisites-section"
 
 export default function VerdantPage() {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -137,6 +138,8 @@ export default function VerdantPage() {
         openFaqIndex={openFaqIndex}
         setOpenFaqIndex={setOpenFaqIndex}
       />
+
+      <RequisitesSection />
 
       <SiteFooter />
     </div>
